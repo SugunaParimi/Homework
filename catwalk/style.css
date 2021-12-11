@@ -1,0 +1,24 @@
+.dancing-cat {
+  position: relative;
+  left: 0px;
+  top: 200px;
+  height: 300;
+  width: 200;
+}
+
+.ball {
+  left: 5%;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: xx-large;
+  position: fixed;
+  background-color: blueviolet;
+}
+.love {
+  left: 10%;
+  margin-top: 10px;
+  margin-left: 100px;
+  font-size: xx-large;
+  position: fixed;
+  background-color: blueviolet;
+}
