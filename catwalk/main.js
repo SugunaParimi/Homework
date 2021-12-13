@@ -2,15 +2,13 @@ let image=document.querySelector("img");
 let left=image.offsetLeft;
 //console.log(left);
 let max= window.innerWidth-300;
-
-
 function catWalk()
 {
-    left+=10;
+    left+=20;
        image.src="http://www.anniemation.com/clip_art/images/cat-walk.gif";
-        image.style.left=left+"px";
+        image.style.left = left+"px";
         let x=(max/2)-left;
-        if(x<10&&x>-10)
+        if(x<20&&x>-20)
         {
             image.src="https://animated.name/uploads/posts/2016-08/1471202361_604.gif"
          setTimeout(catWalk, 5000)
@@ -39,12 +37,12 @@ function flipBack() {
 right=0;
 function walkBack(){
     //console.log(left);    
-    left-=10;
+    left-=20;
     image.src="http://www.anniemation.com/clip_art/images/cat-walk.gif";
     image.style.left=left+'px'
     flipImage();
     let y=(max/2)-left;
-    if(y>-10&&y<10){
+    if(y>-20&&y<20){
         image.src="https://animated.name/uploads/posts/2016-08/1471202361_604.gif"
          setTimeout(walkBack, 5000)
         
@@ -55,9 +53,10 @@ function walkBack(){
     if(left>0)
     
    {setTimeout(walkBack,250);}
-    if(right<0){
+    else{
         flipBack();
         catWalk();
     }
     }
     
+
